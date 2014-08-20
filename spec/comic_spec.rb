@@ -6,6 +6,6 @@ describe Comic do
   it { should have_and_belong_to_many :characters }
 
   it 'should downcase and capitalize names' do
-    expect(Comic.create({name: 'hulk'}).name).to eq 'Hulk'
+    expect(Comic.create({name: 'avengers'}).name).to eq 'Avengers'
   end
 end
