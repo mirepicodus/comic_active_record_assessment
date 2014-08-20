@@ -9,7 +9,8 @@ ActiveRecord::Base.establish_connection(test_configuration)
 RSpec.configure do |config|
   config.after(:each) do
     Comic.all.each { |row| row.destroy }
-    Character.all.each { |row| row.destroy }
-    Power.all.each { |row| row.destroy }
+    # Character.all.each { |row| row.destroy }
+    # Power.all.each { |row| row.destroy }
   end
 end
+
