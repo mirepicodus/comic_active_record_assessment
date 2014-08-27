@@ -28,7 +28,7 @@ def list_comics
 end
 
 def list_characters
-  Character.all.each { |character| puts character.id.to_s + ") " + character.name }
+  Character.list_alpha.each { |character| puts character.id.to_s + ") " + character.name }
 end
 
 def list_powers
